@@ -6,4 +6,91 @@
     android:layout_height="match_parent"
     tools:context=".gpacalculator">
 
+    <Button
+        android:id="@+id/button"
+        android:layout_width="241dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginBottom="28dp"
+        android:text="Add grades"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="241dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginBottom="29dp"
+        android:text="delete grades"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="241dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginBottom="37dp"
+        android:text="view gpa"
+        app:layout_constraintBottom_toTopOf="@+id/button5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="241dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginBottom="26dp"
+        android:text="update grades"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="184dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="113dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="114dp"
+        android:layout_marginBottom="20dp"
+        android:text="back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="209dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="21dp"
+        android:text="GPA Calculator"
+        android:textAlignment="center"
+        android:textColor="#FF0000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

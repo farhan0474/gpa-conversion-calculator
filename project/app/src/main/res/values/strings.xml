@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">project</string>
+    <string-array name="spinner_array">
+        <item>Meter to Kilometer</item>
+        <item>Kilometer to Meter</item>
+        <item>Kilogram to Pound</item>
+        <item>Pound to Kilogram</item>
+        <item>USD to CAD</item>
+        <item>CAD to USD</item>
+        <item>Fahrenheit to Celsius</item>
+        <item>Celsius to Fahrenheit</item>
+    </string-array>
 </resources>

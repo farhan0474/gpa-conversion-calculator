@@ -70,7 +70,7 @@ public class register extends AppCompatActivity {
             sp_editor.putString("last", last);
             sp_editor.putBoolean("rem", isRemember);
             sp_editor.commit();
-            Toast.makeText(getApplicationContext(), "Name saved!", Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), "Name saved!", Toast.LENGTH_SHORT).show();
         }
     }
 
