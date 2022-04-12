@@ -6,31 +6,49 @@
     android:layout_height="match_parent"
     tools:context=".menu">
 
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="209dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="21dp"
+        android:text="Menu"
+        android:textAlignment="center"
+        android:textColor="#FF0000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <Button
         android:id="@+id/button_gpa"
         android:layout_width="241dp"
         android:layout_height="71dp"
         android:layout_marginStart="85dp"
-        android:layout_marginTop="122dp"
+        android:layout_marginTop="34dp"
         android:layout_marginEnd="85dp"
-        android:layout_marginBottom="17dp"
         android:text="GPA Calculator"
-        app:layout_constraintBottom_toTopOf="@+id/button_conversion"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
     <Button
         android:id="@+id/button_conversion"
         android:layout_width="241dp"
         android:layout_height="71dp"
         android:layout_marginStart="85dp"
-        android:layout_marginTop="17dp"
+        android:layout_marginTop="39dp"
         android:layout_marginEnd="85dp"
-        android:layout_marginBottom="166dp"
+        android:layout_marginBottom="105dp"
         android:text="Conversion Calculator"
         app:layout_constraintBottom_toTopOf="@+id/button_back"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_gpa" />
 
@@ -38,13 +56,27 @@
         android:id="@+id/button_back"
         android:layout_width="184dp"
         android:layout_height="61dp"
-        android:layout_marginStart="113dp"
-        android:layout_marginTop="158dp"
-        android:layout_marginEnd="114dp"
-        android:layout_marginBottom="86dp"
+        android:layout_marginStart="114dp"
+        android:layout_marginTop="86dp"
+        android:layout_marginEnd="113dp"
+        android:layout_marginBottom="67dp"
         android:text="Back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_conversion" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="261dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="134dp"
+        android:text="Select the type of calculator"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
