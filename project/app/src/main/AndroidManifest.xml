@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Project">
         <activity
+            android:name=".conversioncalculator"
+            android:exported="false" />
+        <activity
+            android:name=".gpacalculator"
+            android:exported="false" />
+        <activity
             android:name=".menu"
             android:exported="false" />
         <activity
