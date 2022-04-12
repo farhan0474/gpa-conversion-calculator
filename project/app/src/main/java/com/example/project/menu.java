@@ -9,15 +9,23 @@ import android.widget.Button;
 
 public class menu extends AppCompatActivity {
 
-    Button gpa, conversion;
+    Button back, gpa, conversion;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
+        back = findViewById(R.id.button_back);
         gpa = findViewById(R.id.button_gpa);
         conversion = findViewById(R.id.button_conversion);
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
 
         gpa.setOnClickListener(new View.OnClickListener() {
             @Override
