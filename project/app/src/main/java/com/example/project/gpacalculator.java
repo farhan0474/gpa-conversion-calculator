@@ -9,14 +9,46 @@ import android.widget.Button;
 
 public class gpacalculator extends AppCompatActivity {
 
-    Button back;
+    Button addgrades, deletegrades, updategrades, viewgpa, back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gpacalculator);
 
+        addgrades = findViewById(R.id.button_addgrades);
+        deletegrades = findViewById(R.id.button_deletegrades);
+        updategrades = findViewById(R.id.button_updategrades);
+        viewgpa = findViewById(R.id.button_viewgpa);
         back = findViewById(R.id.button5);
+
+        addgrades.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(gpacalculator.this, addgrades.class));
+            }
+        });
+
+        deletegrades.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(gpacalculator.this, deletegrades.class));
+            }
+        });
+
+        updategrades.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(gpacalculator.this, updategrades.class));
+            }
+        });
+
+        viewgpa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(gpacalculator.this, viewgpa.class));
+            }
+        });
 
         back.setOnClickListener(new View.OnClickListener() {
             @Override

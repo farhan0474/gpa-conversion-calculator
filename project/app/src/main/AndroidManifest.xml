@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Project">
         <activity
+            android:name=".viewgpa"
+            android:exported="false" />
+        <activity
+            android:name=".updategrades"
+            android:exported="false" />
+        <activity
+            android:name=".deletegrades"
+            android:exported="false" />
+        <activity
+            android:name=".addgrades"
+            android:exported="false" />
+        <activity
             android:name=".conversioncalculator"
             android:exported="false" />
         <activity
