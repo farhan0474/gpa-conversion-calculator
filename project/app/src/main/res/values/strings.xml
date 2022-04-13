@@ -5,8 +5,8 @@
         <item>Kilometer to Meter</item>
         <item>Kilogram to Pound</item>
         <item>Pound to Kilogram</item>
-        <item>USD to CAD</item>
-        <item>CAD to USD</item>
+        <item>Pound to Ounce</item>
+        <item>Ounce to Pound</item>
         <item>Fahrenheit to Celsius</item>
         <item>Celsius to Fahrenheit</item>
     </string-array>
