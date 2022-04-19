@@ -12,7 +12,8 @@
         android:layout_height="61dp"
         android:layout_marginStart="113dp"
         android:layout_marginEnd="114dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="180dp"
+        android:fontFamily="@font/autour_one"
         android:text="back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -39,6 +40,7 @@
         android:layout_marginStart="86dp"
         android:layout_marginTop="29dp"
         android:layout_marginEnd="86dp"
+        android:fontFamily="@font/delius_swash_caps"
         android:text="Conversion Calculator"
         android:textAlignment="center"
         android:textColor="#FF0000"
@@ -54,6 +56,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="23dp"
+        android:fontFamily="@font/autour_one"
         android:text="Select Type of Conversion"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -65,6 +68,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="11dp"
+        android:fontFamily="@font/autour_one"
         android:text="Amount:"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -76,6 +80,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="12dp"
+        android:fontFamily="@font/autour_one"
         android:text="Result:"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -88,6 +93,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="11dp"
         android:ems="10"
+        android:fontFamily="@font/autour_one"
         android:hint="Enter the amount"
         android:inputType="numberDecimal"
         android:minHeight="48dp"
@@ -100,6 +106,7 @@
         android:layout_height="71dp"
         android:layout_marginStart="85dp"
         android:layout_marginTop="16dp"
+        android:fontFamily="@font/autour_one"
         android:text="Convert"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/amount" />
@@ -111,6 +118,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="48dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_convert" />
+        app:layout_constraintTop_toBottomOf="@+id/button_convert"
+        android:fontFamily="@font/autour_one" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
