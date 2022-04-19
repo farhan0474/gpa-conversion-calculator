@@ -11,17 +11,17 @@ import androidx.annotation.Nullable;
 public class DBHelper extends SQLiteOpenHelper {
 
     public DBHelper(@Nullable Context context) {
-        super(context, "projects", null, 1);
+        super(context, "project", null, 1);
     }
 
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
-        String query = "CREATE TABLE courses (_ID INTEGER PRIMARY KEY AUTOINCREMENT, SemesterId INTEGER, name TEXT, Grade INTEGER)";
+        String query = "CREATE TABLE course (SemesterId INTEGER, name TEXT PRIMARY KEY, Grade INTEGER)";
         sqLiteDatabase.execSQL(query);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
-        String query = "DROP TABLE IF EXISTS courses";
+        String query = "DROP TABLE IF EXISTS course";
         sqLiteDatabase.execSQL(query);
         onCreate(sqLiteDatabase);
     }
