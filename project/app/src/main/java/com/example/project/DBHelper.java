@@ -39,7 +39,7 @@ public class DBHelper extends SQLiteOpenHelper {
     public Cursor displayValue(int semesterId) {
 
         SQLiteDatabase sqLiteDatabase = this.getReadableDatabase();
-        Cursor cursor = sqLiteDatabase.rawQuery("SELECT * FROM course WHERE semester= ?", new String[]{String.valueOf(semesterId)});
+        Cursor cursor = sqLiteDatabase.rawQuery("SELECT * FROM course WHERE SemesterId= ?", new String[]{String.valueOf(semesterId)});
         return cursor;
     }
 
@@ -65,6 +65,12 @@ public class DBHelper extends SQLiteOpenHelper {
             contentValues.put("Grade", grade);
             sqLiteDatabase.update("course", contentValues, "name = ?", new String[]{nameInput});
         }
+        return cursor;
+    }
+
+    public Cursor getSemesterIDs(){
+        SQLiteDatabase sqLiteDatabase = this.getReadableDatabase();
+        Cursor cursor = sqLiteDatabase.rawQuery("SELECT DISTINCT SemesterId FROM course ORDER BY SemesterId ASC", null);
         return cursor;
     }
 }
