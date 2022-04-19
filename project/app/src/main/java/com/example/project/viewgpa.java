@@ -40,7 +40,6 @@ public class viewgpa extends AppCompatActivity {
             title.setText("Transcript");
             StringBuilder output = new StringBuilder("\n\n");
             int[] semesterNumbers = new int[8];
-            int[] gradeNumbers = new int[40];
             int totalSemesters = 0;
             int totalCourses = 0;
             int totalGrades = 0;
