@@ -10,11 +10,18 @@ import android.widget.Button;
 public class gpacalculator extends AppCompatActivity {
 
     Button addgrades, deletegrades, updategrades, viewgpa, back;
+    DBHelper dbHelper;
+
+    private static gpacalculator instance;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gpacalculator);
+
+        instance = this;
+        dbHelper = new DBHelper(this);
+        dbHelper.getReadableDatabase();
 
         addgrades = findViewById(R.id.button_addgrades);
         deletegrades = findViewById(R.id.button_deletegrades);
@@ -56,5 +63,14 @@ public class gpacalculator extends AppCompatActivity {
                 startActivity(new Intent(gpacalculator.this, menu.class));
             }
         });
+    }
+
+    public static gpacalculator getInstance() {
+        return instance;
+    }
+
+    public DBHelper getDatabase(){
+
+        return dbHelper;
     }
 }

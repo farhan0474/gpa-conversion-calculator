@@ -16,7 +16,7 @@ public class viewgpa extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_viewgpa);
 
-        back = findViewById(R.id.button7);
+        back = findViewById(R.id.back7);
 
         back.setOnClickListener(new View.OnClickListener() {
             @Override
