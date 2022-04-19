@@ -57,6 +57,7 @@ public class addgrades extends AppCompatActivity {
                     } else {
                         semester.setText("");
                         name.setText("");
+                        grade.setText("");
                         Toast.makeText(getApplicationContext(), "Value has been added!", Toast.LENGTH_SHORT).show();
                     }
                 }

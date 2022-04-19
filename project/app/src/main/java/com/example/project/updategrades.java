@@ -54,6 +54,9 @@ public class updategrades extends AppCompatActivity {
                 else {
                     Cursor cursor = dbHelper.editValue(semesterId, nameInput, gradeInput);
                     if(cursor.getCount() > 0) {
+                        semester.setText("");
+                        name.setText("");
+                        grade.setText("");
                         Toast.makeText(getApplicationContext(), "Grade has been updated!", Toast.LENGTH_SHORT).show();
                     }
                     else{
