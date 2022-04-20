@@ -10,8 +10,11 @@ import android.widget.Button;
 public class gpacalculator extends AppCompatActivity {
 
     Button addgrades, deletegrades, updategrades, viewgpa, back;
+
+    //Used for referring to the database
     DBHelper dbHelper;
 
+    //Used for referring to the instance of this activity
     private static gpacalculator instance;
 
     @Override
@@ -19,7 +22,10 @@ public class gpacalculator extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gpacalculator);
 
+        //Setting the instance variable to this activity
         instance = this;
+
+        //Creating a database
         dbHelper = new DBHelper(this);
         dbHelper.getReadableDatabase();
 
@@ -65,10 +71,16 @@ public class gpacalculator extends AppCompatActivity {
         });
     }
 
+    /*
+    Method used for getting the instance of this activity
+     */
     public static gpacalculator getInstance() {
         return instance;
     }
 
+    /*
+    Method used for getting the database used in this activity
+     */
     public DBHelper getDatabase(){
 
         return dbHelper;
