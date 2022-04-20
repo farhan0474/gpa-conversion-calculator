@@ -57,7 +57,6 @@ public class conversioncalculator extends AppCompatActivity implements AdapterVi
                 } else if (selectedConversion.equals("Celsius to Fahrenheit")) {
                     output.setText(""+(((Double.parseDouble(input.getText().toString()))/(5.0/9.0))+32));
                 }
-
             }
         });
 

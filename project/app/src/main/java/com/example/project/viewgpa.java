@@ -75,6 +75,5 @@ public class viewgpa extends AppCompatActivity {
                 startActivity(new Intent(viewgpa.this, gpacalculator.class));
             }
         });
-
     }
 }
